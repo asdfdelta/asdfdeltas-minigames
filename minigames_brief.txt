@@ -1,0 +1,29 @@
+-------------------Crowd-sourced minigames;
+**ASDFDELTA'S MINIGAMES**
+Hey everyone! I'm a developer for the Arms of War trilogy, and I'd like to take a quick break from that to make a series of minigames. These minigames will have a twist though -- every part of how they work will come from YOU! 
+Don't worry, **YOU DON'T HAVE TO BE A PROGRAMMER**. You should probably have played some PBBGs, but there's no requirements to join the team.
+
+The idea is that I'd like to make games that people actually want to play, letting you all take the wheel seems to be the best way to find out what that is. Crowd-sourced minigames, essentially. There will be some organization; such as voting, document sharing and limited guidance so we all know what direction to go in for each minigame. Other than that, you all are free to come up with ideas and discuss what works, what doesn't work, and what you'd wish games could have.
+
+We'll go through the whole process of designing these minigames, so you all will get a peak behind the curtain if you'd like. We can keep tweaking things and see if we can come up with some fresh ideas that can be used in future games!
+
+
+**THE MINIGAMES**
+These minigames are going to be really small, like a sort of proof-of-concept (or minimum viable product) of a particular *game mechanic or idea*. These mechanics/ideas are things like an aspect of combat, gathering resources, crafting, growing food, public markets, etc.
+
+For example, a minigame where you click to collect a resource, then spend it on a house, upgrading parts of it to give a bonus to your click. This would be TWO mechanics -- gathering resources via clicking is one, and spending the resources on a house in return for bonuses is the second.
+
+Before starting to develop any of these games, we need to organize all of our thoughts to fill out the following;
+
+CORE GAME MECHANICS/IDEAS
+GOALS
+COMPONENTS
+
+
+**THE RULES**
+- Games must be simple and demonstrate one or two core ideas
+- Games cannot require a login
+- Games cannot directly rip someone else's game, but can take inspiration from
+- I reserve veto powers
+- All mechanics, goals and components will be voted on with a 'majority rules' mentality
+- All code will be OPEN-SOURCE
