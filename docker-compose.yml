@@ -1,0 +1,18 @@
+version: '2'
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27018:27018"
+  web:
+    image: asdfdeltas-minigames:local
+    build: ./app
+    links:
+     - "mongo:27018"
+    ports:
+      - "3000:3000"
+      - "9228:9229"
+    command: npm run dev
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules

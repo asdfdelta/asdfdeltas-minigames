@@ -1,0 +1,18 @@
+#This file contains a list of files directories that will not be included when docker is built.
+
+# Source Control
+.git
+.hg
+.svn
+
+# Docker Internal Files
+.dockerignore
+Dockerfile
+
+# nodejs cached files
+node_modules
+app/node_modules
+npm-debug.log
+
+# zips
+*.tar
