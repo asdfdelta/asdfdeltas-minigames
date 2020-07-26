@@ -1,7 +1,10 @@
-import { default as MongoClient } from 'mongodb';
-import nextConnect from 'next-connect';
+import { MongoClient } from "mongodb";
+import nextConnect from "next-connect";
 
-const client = new MongoClient("mongodb://"+process.env.MONGODB_HOST+":"+process.env.MONGODB_PORT+"/", {
+const host = process.env.MONGODB_HOST;
+const port = process.env.MONGODB_PORT;
+
+const client = new MongoClient(`mongodb://${host}:${port}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -9,7 +12,7 @@ const client = new MongoClient("mongodb://"+process.env.MONGODB_HOST+":"+process
 async function database(req, res, next) {
   if (!client.isConnected()) await client.connect();
   req.dbClient = client;
-  req.db = client.db('minigames');
+  req.db = client.db("minigames");
   return next();
 }
 
