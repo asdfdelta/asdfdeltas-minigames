@@ -1,8 +1,8 @@
 import { MongoClient } from "mongodb";
 import nextConnect from "next-connect";
 
-const host = process.env.MONGODB_HOST;
-const port = process.env.MONGODB_PORT;
+const host = "localhost";
+const port = "27017";
 
 const client = new MongoClient(`mongodb://${host}:${port}`, {
   useNewUrlParser: true,
