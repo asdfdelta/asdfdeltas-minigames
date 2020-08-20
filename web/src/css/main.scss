@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
+
+// Custom CSS
+.resume ul {
+  list-style: square;
+  line-height: 1.5em;
+  padding: 0 0 0 2em;
+  margin: inherit;
+}
+
+.portfolio {
+  p:first-of-type {
+    margin-top: 0px !important;
+  }
+  p:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+}
+
+.font-header {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+.--fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+.loader {
+  height: 5px;
+  background-color: LimeGreen;
+  width: 0px;
+  animation: 2s grow-bar;
+}
+
+@keyframes grow-bar {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
