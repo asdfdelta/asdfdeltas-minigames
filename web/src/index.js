@@ -6,7 +6,7 @@ import App from "./views/App";
 
 import "./css/main.scss";
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Router>
     <App />
   </Router>,
