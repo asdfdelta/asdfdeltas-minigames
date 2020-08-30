@@ -1,6 +1,8 @@
 const assert = require("assert");
 const bluebird = require("bluebird");
 const client = bluebird.promisifyAll(require('mongodb')).MongoClient;
+const mongohost = process.env.MONGODB_HOST || 'localhost';
+const mongoport = process.env.MONGODB_PORT || '27017';
 
 let _db;
 
@@ -15,7 +17,7 @@ function initDb(callback){
     return callback(null, _db);
   }
 
-  client.connect("mongodb://"+process.env.MONGODB_HOST+":"+process.env.MONGODB_PORT+"/", connected);
+  client.connect("mongodb://"+mongohost+":"+mongoport+"/", connected);
 
   function connected(err, db){
     if(err){

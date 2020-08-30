@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev:build-server": "SET NODE_ENV=development webpack --config webpack.server.js --mode=development -w",
-    "dev:start": "nodemon ./server-build/index.js",
+    "dev:start": "nodemon ./server/index.js",
     "dev": "npm-run-all --parallel build dev:*"
   },
   "eslintConfig": {
